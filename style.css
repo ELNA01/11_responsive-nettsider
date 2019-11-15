@@ -1,0 +1,75 @@
+body{
+  background-color: #3c3c3c;
+  margin: 0px;
+}
+nav{
+  display: flex;
+  background-color: white;
+  padding: 15px;
+}
+
+nav a{
+  justify-content:space-between;
+  grid-gap: 10px;
+  flex-basis: 100px;
+  text-decoration: none;
+  font-family: arial;
+  color: black;
+}
+
+@media (max-width:600px){
+  nav{
+    flex-direction: column;
+  }
+
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+}
+
+.grid img{
+  width: 100%;
+}
+
+
+@media(max-width: 1400px){
+  .grid{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media(max-width: 800px){
+    .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  @media(max-width: 600px){
+    .grid{
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1400px){
+  body{
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 1200px){
+  body{
+    background-color: green;
+  }
+}
+
+@media (max-width: 800px){
+  body{
+    background-color: red;
+  }
+}
+
+@media (max-width: 600px){
+body{
+  background-image: url("bilder-oscar/cmbyn.jpg");
+}
+}
